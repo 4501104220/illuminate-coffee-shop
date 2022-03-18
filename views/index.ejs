@@ -1,0 +1,569 @@
+<%- include('_layouts/header'); -%>
+<section class="home-slider js-fullheight owl-carousel bg-white">
+    <div class="slider-item js-fullheight">
+        <div class="overlay"></div>
+        <div class="container-fluid p-0">
+            <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                 data-scrollax-parent="true">
+                <div class="one-third order-md-last img js-fullheight"
+                     style="background-image:url(/images/bg_3.jpg);width: 100%;">
+                    <div class="overlay"></div>
+                </div>
+                <div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
+                     data-scrollax=" properties: { translateY: '70%' }">
+                    <div class="introduce">
+                        <h1 class="text-intro-heading" style="color: #ffffff;">Đồ uống an toàn <br> và thanh khiết</h1>
+                        <p class="text-introduce">Chào mừng bạn đến với Illuminate Coffee Shop. Hy vọng bạn sẽ tận hưởng được hương vị
+                            cà phê ở khắp nơi trên thế giới ở Illuminate Coffee Shop </p>
+                        <% if( !user ){ %>
+                            <p><a href="#order_now" class="btn btn-primary px-4 py-3 mt-3 responsive-index">Đặt đồ
+                                    ngay</a></p>
+                        <% } else { %>
+                            <p><a href="/menu" class="btn btn-primary px-4 py-3 mt-3 responsive-index">Đặt đồ
+                                    ngay</a></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-item js-fullheight">
+        <div class="overlay"></div>
+        <div class="container-fluid p-0">
+            <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                 data-scrollax-parent="true">
+                <div class="one-third order-md-last img js-fullheight"
+                     style="background-image:url(/images/bg_2.jpg); width: 100%;">
+                    <div class="overlay"></div>
+                </div>
+                <div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
+                     data-scrollax=" properties: { translateY: '70%' }">
+                    <div class="introduce">
+                        <h1 class="text-intro-heading" style="color: #ffffff;">Giá cả phù hợp</h1>
+                        <p class="text-introduce">Chào mừng bạn đến với Illuminate Coffee Shop. Hy vọng bạn sẽ tận hưởng được hương vị
+                            cà phê ở khắp nơi trên thế giới ở Illuminate Coffee Shop</p>
+                        <% if( !user ){ %>
+                            <p><a href="#order_now" class="btn btn-primary px-4 py-3 mt-3 responsive-index">Đặt đồ
+                                    ngay</a></p>
+                        <% } else { %>
+                            <p><a href="/menu" class="btn btn-primary px-4 py-3 mt-3 responsive-index">Đặt đồ
+                                    ngay</a></p>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<section class="responsive-backgroud1">
+    <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end"
+         data-scrollax-parent="true">
+        <div class="one-third order-md-last img js-fullheight"
+             style="background-image:url(/images/product-coffee.jpg); max-width: 100%; height: auto;">
+            <div class="row no-gutters">
+                <div class="responsive-backgroud">
+                    <div class="col-sm-7 wrap-about py-5 ftco-animate" style="max-width: 80%;">
+                        <div class="heading-section mt-5 mb-4">
+                            <div class="pl-lg-5 ml-md-5">
+                                <span class="subheading">Cửa hàng</span>
+                                <h2 class="mb-4" style="color: #ffffff;">Welcome to Illuminate Coffee Shop</h2>
+                            </div>
+                        </div>
+                        <div class="pl-lg-5 ml-md-5">
+                            <p>Đến với Illuminate Coffee Shop bạn sẽ không chỉ được tận hưởng hương vị cà phê từ khắp nơi trên thế
+                                giới mà còn là những đồ uống được tạo ra bởi những con người hàng đầu và một không gian
+                                thoải mái, riêng tư ở từng tầng để phục vụ cho
+                                các bạn muốn tổ chức họp nhóm, học tập và làm việc.
+
+                            </p>
+                            <h3 class="mt-5" style="color: #ffffff;">Đồ uống đặc biệt</h3>
+                            <div class="thumb my-4 d-flex">
+                                <a href="/menu/61c27adc765f856f10ab1bc0"
+                                   class="thumb-menu pr-md-4 text-center">
+                                    <div class="img"
+                                         style="background-image: url(/uploads/image-1640135388777.jpg);"></div>
+                                    <h4 style="color: #ffffff;">
+                                        WHISKY COFFEE COLD BREW</h4>
+                                </a>
+                                <a href="/menu/61c34c5016af22c17679155c"
+                                   class="thumb-menu pr-md-4 text-center">
+                                    <div class="img"
+                                         style="background-image: url(/uploads/image-1640189008426.jpg);"></div>
+                                    <h4 style="color: #ffffff;">Americano Nóng</h4>
+                                </a>
+                                <a href="/menu/61c27d3d765f856f10ab1c9d"
+                                   class="thumb-menu pr-md-4 text-center">
+                                    <div class="img"
+                                         style="background-image: url(/uploads/image-1640135997139.jpg);"></div>
+                                    <h4 style="color: #ffffff;">
+                                        Trà Dâu</h4>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="responsive-backgroud2" style="height: auto;">
+    <div class="ftco-section ftco-wrap-about ftco-no-pb ftco-no-pt">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-7 wrap-about py-5 ftco-animate">
+                    <div class="heading-section mt-5 mb-4">
+                        <div class="pl-lg-5 ml-md-5">
+                            <span class="subheading">Cửa hàng</span>
+                            <h2 class="mb-4">Welcome to Illuminate Coffee Shop</h2>
+                        </div>
+                    </div>
+                    <div class="pl-lg-5 ml-md-5">
+                        <p>Đến với Illuminate Coffee Shop bạn sẽ không chỉ được tận hưởng hương vị cà phê từ khắp nơi trên thế giới mà
+                            còn là những đồ uống được tạo ra bởi những con người hàng đầu và một không gian thoải mái,
+                            riêng tư ở từng tầng để phục vụ cho các
+                            bạn muốn tổ chức họp nhóm, học tập và làm việc.</p>
+                        <h3 class="mt-5">Đồ uống đặc biệt</h3>
+                        <div class="thumb my-4 d-flex">
+                            <a href="/menu/61c27adc765f856f10ab1bc0" class="thumb-menu pr-md-4 text-center">
+                                <div class="img" style="background-image: url(/uploads/image-1640135388777.jpg); "
+                                     style="height:auto;"></div>
+                                <h4>WHISKY COFFEE COLD BREW</h4>
+                            </a>
+                            <a href="/menu/61c34c5016af22c17679155c" class="thumb-menu pr-md-4 text-center">
+                                <div class="img" style="background-image: url(/uploads/image-1640189008426.jpg);"></div>
+                                <h4>Americano Nóng</h4>
+                            </a>
+                            <a href="/menu/61c27d3d765f856f10ab1c9d" class="thumb-menu pr-md-4 text-center">
+                                <div class="img" style="background-image: url(/uploads/image-1640135997139.jpg);"></div>
+                                <h4>Trà dâu</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(/images/bg_5.jpg);"
+         data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row d-md-flex align-items-center justify-content-center">
+            <div class="col-lg-10">
+                <div class="row d-md-flex align-items-center">
+                    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="<%= monthServed %>">0</strong>
+                                <span>Tháng phục vụ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="<%= numbersOfUsers %>">0</strong>
+                                <span>Khách hàng mua café</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="<%= numbersOfDiscount %>">0</strong>
+                                <span>Chương trình khuyến mãi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                        <div class="block-18">
+                            <div class="text">
+                                <strong class="number" data-number="<%= dayServed %>">0</strong>
+                                <span>Ngày mở cửa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <span class="subheading">Mới</span>
+                <h2 class="mb-4">Sản phẩm</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 menu-wrap">
+                <div class="heading-menu text-center ftco-animate">
+                    <h3>Sản phẩm mới nhất</h3>
+                </div>
+                <% productNew.forEach(product => { %>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url('<%= product.Image[0] %>');"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>
+                                        <a href="/menu/<%= product._id %>">
+                                            <%= product.name %>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price"><%= product.price %></span>
+                                </div>
+                            </div>
+                            <p>
+                                <%= product.material %>
+                            </p>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-wrap">
+                <div class="heading-menu text-center ftco-animate">
+                    <h3>Cà phê</h3>
+                </div>
+                <% caPhe.forEach(product => { %>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url('<%= product.Image[0] %>');"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>
+                                        <a href="/menu/<%= product._id %>">
+                                            <%= product.name %>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price"><%= product.price %></span>
+                                </div>
+                            </div>
+                            <p>
+                                <%= product.material %>
+                            </p>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-wrap">
+                <div class="heading-menu text-center ftco-animate">
+                    <h3>Trà trái cây-Trà sữa</h3>
+                </div>
+                <% traSua.forEach(product => { %>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url('<%= product.Image[0] %>');"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>
+                                        <a href="/menu/<%= product._id %>">
+                                            <%= product.name %>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price"><%= product.price %></span>
+                                </div>
+                            </div>
+                            <p>
+                                <%= product.material %>
+                            </p>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+
+            <!--  -->
+            <div class="col-md-6 col-lg-4 menu-wrap">
+                <div class="heading-menu text-center ftco-animate">
+                    <h3>Đá xay-Choco-Matcha</h3>
+                </div>
+                <% daXay.forEach(product => { %>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url('<%= product.Image[0] %>');"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>
+                                        <a href="/menu/<%= product._id %>">
+                                            <%= product.name %>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price"><%= product.price %></span>
+                                </div>
+                            </div>
+                            <p>
+                                <%= product.material %>
+                            </p>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-wrap">
+                <div class="heading-menu text-center ftco-animate">
+                    <h3>Đồ uống nhanh</h3>
+                </div>
+                <% doUongNhanh.forEach(product => { %>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url('<%= product.Image[0] %>');"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>
+                                        <a href="/menu/<%= product._id %>">
+                                            <%= product.name %>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price"><%= product.price %></span>
+                                </div>
+                            </div>
+                            <p>
+                                <%= product.material %>
+                            </p>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+
+            <div class="col-md-6 col-lg-4 menu-wrap">
+                <div class="heading-menu text-center ftco-animate">
+                    <h3>Drinks</h3>
+                </div>
+                <% drinks.forEach(product => { %>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url('<%= product.Image[0] %>');"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>
+                                        <a href="/menu/<%= product._id %>">
+                                            <%= product.name %>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price"><%= product.price %></span>
+                                </div>
+                            </div>
+                            <p>
+                                <%= product.material %>
+                            </p>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="ftco-section testimony-section" style="background-image: url(/images/ca-phe-nguyen-chat-da-nang-1.jpg);"
+         data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                <span class="ftco-heading-2">Thank you</span>
+                <h2 class="ftco-heading-2">Illuminate Coffee Shop</h2>
+            </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+            <div class="col-md-7">
+                <div class="carousel-testimony owl-carousel ftco-owl">
+                    <div class="item">
+                        <div class="testimony-wrap text-center py-4 pb-5">
+                            <div class="user-img mb-4" style="background-image: url(/images/linh.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                            </div>
+                            <div class="text p-3">
+                                <p class="mb-4">Illuminate Coffee Shop mang lại trải nghiệm đồ uống thật tuyệt vời</p>
+                                <p class="name">Phạm Văn Linh</p>
+                                <span class="position">Khách hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap text-center py-4 pb-5">
+                            <div class="user-img mb-4" style="background-image: url(/images/dat.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                            </div>
+                            <div class="text p-3">
+                                <p class="mb-4">Cà phê thơm ngon, nguyên chất</p>
+                                <p class="name">Bùi Tiến Đạt</p>
+                                <span class="position">Khách hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap text-center py-4 pb-5">
+                            <div class="user-img mb-4" style="background-image: url(/images/long.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                            </div>
+                            <div class="text p-3">
+                                <p class="mb-4">Cảm ơn quý khách đã đồng hành với chúng tôi</p>
+                                <p class="name">Hoàng Long</p>
+                                <span class="position">Quản lí</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap text-center py-4 pb-5">
+                            <div class="user-img mb-4" style="background-image: url(/images/hoang.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                            </div>
+                            <div class="text p-3">
+                                <p class="mb-4">Một trong những quán phục vụ mà tôi thích nhất</p>
+                                <p class="name">Trần Công Hoàng</p>
+                                <span class="position">Khách hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap text-center py-4 pb-5">
+                            <div class="user-img mb-4" style="background-image: url(/images/person_3.jpg)">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+                            </div>
+                            <div class="text p-3">
+                                <p class="mb-4">Cảm ơn quý khách đã đồng hành với chúng tôi</p>
+                                <p class="name">Bùi Thị Mai Anh</p>
+                                <span class="position">Khách hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<% if( !user ) { %>
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-5 ftco-animate img img-2 responsive-index-img"
+                     style="background-image: url(/images/bg_7.jpg);"></div>
+                <div class="col-md-7 ftco-animate makereservation p-4 p-md-5">
+                    <div class="heading-section ftco-animate mb-5" id="order_now">
+                        <span class="subheading"></span>
+                        <h2 class="mb-4">Thưởng thức tại nhà</h2>
+                    </div>
+                    <form action="/order/orderNotLogin" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Họ tên</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Họ tên">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Số điện thoại</label>
+                                    <input name="phone" type="number" class="form-control" placeholder="Nhập số">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Điạ chỉ</label>
+                                    <input name="address" type="text" class="form-control" placeholder="Địa chỉ">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Ghi chú</label>
+                                    <input name="note" type="text" class="form-control" placeholder="Lưu ý cho quán">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input name="email" type="email" class="form-control"
+                                           placeholder="VD: abc@gmail.com">
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Tên sản phẩm</label>
+                                    <input name="nameproduct" type="text" class="form-control"
+                                           placeholder="Tên đồ uống">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Số lượng</label>
+                                    <!-- <input type="number" id="quantity_61968f808d09d" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Cà phê Hạt Arabica gu đặc biệt gói 250g quantity"> -->
+                                    <input type="number" id="quantity_61968f808d09d" min="1" max="10000"
+                                           class="form-control" name="amount" placeholder="Số lượng nhỏ nhất là 1">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group" style="margin-top: 55px;">
+                                    <label for="">Size</label>
+                                    <select name="size">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-group">
+                                    <input type="submit" value="Đặt ngay" class="btn btn-primary py-3 px-5">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<% } %>
+
+<%- include('_layouts/footer'); -%>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', async () => {
+        if ('<%= status %>') {
+            if ('<%= status %>' == 'Không tìm thấy sản phẩm này') {
+                await swal("<%= status %>", "Click để tiếp tục", "warning")
+            } else {
+                await swal("Đặt hàng thành công!", "Vui lòng kiểm tra email, hãy liên hệ với chúng tôi sớm nhất nếu không nhận được email!", "success")
+            }
+        }
+        var header = document.getElementById('ftco-navbar')
+        header.classList.remove('ftco-navbar-light-2')
+        header.classList.add('ftco-navbar-light')
+    })
+</script>
