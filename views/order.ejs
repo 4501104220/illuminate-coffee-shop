@@ -1,0 +1,69 @@
+<%- include('_layouts/header') ; -%>
+
+<div class="container">
+    <div class="cart">
+        <table class="cart-table" style="margin-top: 100px;">
+            <tr>
+
+                <th width="100" style="text-align: center;">Đơn hàng</th>
+                <th width="75" style="text-align: center;">Tổng số tiền</th>
+                <th width="75" style="text-align: center;">Số lượng</th>
+                <th width="150" style="text-align: center;">Tình trạng</th>
+                <th width="50" style="text-align: center;">Thao tác</th>
+            </tr>
+
+            <% orders.forEach(function(order, index) { %>
+                <tr class="cart-item">
+                    <td>
+                        <a href="/order/detail/<%= order._id %>"># <%= order._id.toString().slice(18, 24) %></a>
+                    </td>
+                    <td><%= order.subtotal %>đ</td>
+                    <td> <%= order.orderItems.length %>  </td>
+
+                    <td> <%= order.status %> </td>
+                    <form id="formsubmit<%= order._id %>"
+                          action="/order/sendNotification/<%= order._id %>/<%= userid %>"
+                          method="post"></form>
+                    <form id="orderdetail<%= order._id %>" action="/order/detail/<%= order._id %>"
+                          method="get"></form>
+
+                    <td>
+                        <button onclick="XemDon('<%= order._id %>');" type="submit" id="sua" title="Xem đơn"><i
+                                    class="fas fa-eye"></i></button>
+                        <% if(order.status == 'shipper đang lấy hàng') { %>
+                            <button class="ml-1" onclick="HuyDon('<%= order._id %>');" type="submit" id="xoa"
+                                    title="Yêu cầu hủy đơn"><i class="fas fa-trash"></i></button>
+                        <% } else { %>
+                            <button class="ml-1" id="xoa" disabled="disabled"><i class="fas fa-trash"></i></button>
+                        <% } %>
+                    </td>
+
+                </tr>
+            <% }) %>
+        </table>
+
+    </div>
+</div>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", async () => {
+        if ('<%= warning %>') {
+            await swal("Thông báo!", "<%= warning %>", "warning")
+        }
+    })
+
+    async function HuyDon(orderid) {
+        const formsubmit = document.getElementById(`formsubmit${orderid}`)
+        await swal("Đang xử lý!", "Bản đã gửi yêu cầu hủy đơn hàng", "success")
+        formsubmit.submit()
+    };
+
+    function XemDon(orderid) {
+        const formsubmit = document.getElementById(`orderdetail${orderid}`)
+        formsubmit.submit()
+    };
+
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<%- include('_layouts/footer') ; -%>
