@@ -63,59 +63,6 @@
                     </a>
                 </div>
             </div>
-            <div class="tab-content p-md-5" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="discount" role="tabpanel" aria-labelledby="password-tab">
-                    <div class="grid__column-10">
-                        <div class="cart-cart" style="padding: 20px 10px 10px;">
-                            <span class="subheading" style="font-size:22px;">Mã giảm giá</span>
-                            <table class="cart-table">
-                                <tr>
-                                    <!--<th style="width: 30px; margin-left: 8px;"><span class="cart-all">Tất cả</span></th>-->
-                                    <th class="admin-header__products" style="width:100px">Đối tượng sử dụng</th>
-                                    <th class="admin-header__price">Tên mã</th>
-                                    <th class="admin-header__time" style="width:140px">Thời gian áp dụng</th>
-                                    <th class="admin-header__header">Thao tác</th>
-                                </tr>
-                                <% discounts.forEach(function(discount){ %>
-                                    <tr class="cart-item">
-                                        <!--<td><input type="checkbox" checked="checked" class="cart-check" /></td>-->
-                                        <td class="cart-txt-left">
-                                            <a href="/admin/allDiscount/<%= discount._id %>"
-                                               class="cart-name">Khách hàng <%= discount.condition1 %></a></td>
-                                        <td><span class="cart-price"><%= discount.name %></span></td>
-                                        <td><span class="cart-time">
-                                                <% if(discount.startTime) { %><%= discount.startTime.toLocaleString('en-GB') %>
-                                                - <%= discount.endTime.toLocaleString('en-GB') %>
-                                                <% } %>
-                                            </span></td>
-                                        <td>
-                                            <form id="discount<%= discount._id %>"
-                                                  action="/admin/allDiscount/delete/<%= discount._id %>"
-                                                  method="post">
-                                                <a class="mr-1"
-                                                   href="/admin/allDiscount/<%= discount._id %>">
-                                                    <button id="sua" type="button">
-                                                        <i class="fas fa-pencil-alt"></i>
-                                                    </button>
-                                                </a>
-                                                <button id="xoa"
-                                                        onclick="event.preventDefault();DeleteDiscount('<%= discount._id %>');">
-                                                    <i class="fas fa-trash"></i></button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                <% }) ; %>
-                                <tr class="cart-bottom">
-                                    <td colspan="6">
-                                        <a href="/admin/createDiscount" class="cart-bottom-btn">Thêm mã giảm
-                                            giá</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <input type="checkbox" name="" hidden class="nav-input" id="responsive-nav-input1">
         <label for="responsive-nav-input1" class="nav_overlay"></label>
@@ -131,9 +78,6 @@
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <a class="nav-link" id="products-tab" href="/admin" style="margin-top: 30px;"> Sản phẩm
                 </a>
-                <a class="nav-link active" id="discount-tab" href="/admin/discount">
-                    Mã giảm giá
-                </a>
                 <a class="nav-link" id="user-tab" href="/admin/user">
                     Người dùng
                 </a>
@@ -143,11 +87,7 @@
                 <a class="nav-link" id="stories-tab" href="/admin/stories">
                     Tin tức
                 </a>
-                <a class="nav-link" id="statistic-tab" href="/admin/statistic">
-                    Thống kê
-                </a>
             </div>
-
         </div>
     </div>
 
