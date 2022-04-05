@@ -201,7 +201,7 @@ const buyNotLogin = async (req, res) => {
         },
     });
     const mailOptions = {
-        from: '"Illuminate Coffee Shop" <ka.coffee.hust@outlook.com>',
+        from: '"Illuminate Coffee Shop" <illuminate.coffee@outlook.com>',
         to: req.body.email,
         subject: 'Chúc mừng bạn có đơn hàng đầu tiên',
         html: '<b>Chúc mừng bạn có đơn hàng đầu tiên: </b> Hãy đăng nhập để có thể hưởng thêm ưu đãi',
