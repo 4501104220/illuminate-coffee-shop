@@ -19,25 +19,7 @@
                     </td>
                     <td><%= order.subtotal %>đ</td>
                     <td> <%= order.orderItems.length %>  </td>
-
                     <td> <%= order.status %> </td>
-                    <form id="formsubmit<%= order._id %>"
-                          action="/order/sendNotification/<%= order._id %>/<%= userid %>"
-                          method="post"></form>
-                    <form id="orderdetail<%= order._id %>" action="/order/detail/<%= order._id %>"
-                          method="get"></form>
-
-                    <td>
-                        <button onclick="XemDon('<%= order._id %>');" type="submit" id="sua" title="Xem đơn"><i
-                                    class="fas fa-eye"></i></button>
-                        <% if(order.status == 'shipper đang lấy hàng') { %>
-                            <button class="ml-1" onclick="HuyDon('<%= order._id %>');" type="submit" id="xoa"
-                                    title="Yêu cầu hủy đơn"><i class="fas fa-trash"></i></button>
-                        <% } else { %>
-                            <button class="ml-1" id="xoa" disabled="disabled"><i class="fas fa-trash"></i></button>
-                        <% } %>
-                    </td>
-
                 </tr>
             <% }) %>
         </table>
@@ -53,16 +35,6 @@
         }
     })
 
-    async function HuyDon(orderid) {
-        const formsubmit = document.getElementById(`formsubmit${orderid}`)
-        await swal("Đang xử lý!", "Bản đã gửi yêu cầu hủy đơn hàng", "success")
-        formsubmit.submit()
-    };
-
-    function XemDon(orderid) {
-        const formsubmit = document.getElementById(`orderdetail${orderid}`)
-        formsubmit.submit()
-    };
 
 </script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
