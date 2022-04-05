@@ -1,7 +1,7 @@
 <%- include('_layouts/header'); -%>
 
 <!--web pc-->
-<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg-5.jpg');"
+<section class="hero-wrap hero-wrap-2" style="background-image: url('/images/bg_5.jpg');"
          data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -139,6 +139,38 @@
                         </div>
                     </form>
                 </div>
+
+
+                <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                    <form action="/user/me/updateUserPassword" method="POST">
+                        <h3 class="mb-4">Cài đặt mật khẩu</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Mật khẩu cũ</label>
+                                    <input type="password" name="oldPassword" required class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Mật khẩu mới</label>
+                                    <input type="password" name="newPassword" required class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Cập nhật</button>
+                            <button class="btn btn-light">Hủy</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- <button class="btn btn-primary">Cập nhật</button>
+<button class="btn btn-light">Hủy</button> -->
             </div>
         </div>
     </div>
