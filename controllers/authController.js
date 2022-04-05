@@ -228,7 +228,7 @@ const forgotPassword = async (req, res) => {
         },
     });
     const mailOptions = {
-        from: '"Illuminate Coffee Shop" <ka.coffee.hust@outlook.com>',
+        from: '"Illuminate Coffee Shop" <illuminate.coffee@outlook.com>',
         to: email,
         subject: 'Thiết lập lại mật khẩu!',
         html: '<b>Mật khẩu mới: </b>' + newPassword,
