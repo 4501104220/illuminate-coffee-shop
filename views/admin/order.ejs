@@ -58,6 +58,9 @@
                     <a class="nav-link" id="stories-tab" href="/admin/stories">
                         Tin tức
                     </a>
+                    <a class="nav-link" id="statistic-tab" href="/admin/statistic">
+                        Thống kê
+                    </a>
                 </div>
             </div>
             <div class="tab-content p-md-5" id="v-pills-tabContent">
@@ -71,6 +74,7 @@
                                     <th class="admin-header__products">Mã số đơn</th>
                                     <th class="admin-header__price">Giá</th>
                                     <th class="admin-header__price">Số lượng</th>
+                                    <th class="admin-header__price">Tình trạng</th>
                                     <th class="admin-header__header">Thao tác</th>
                                 </tr>
                                 <% orders.forEach(function(order, index){ %>
@@ -85,6 +89,25 @@
                                             </a></td>
                                         <td><span class="cart-price"><%= order.total %></span></td>
                                         <td><span class="cart-price"><%= order.orderItems.length %></span></td>
+                                        <td><span class="cart-price"><%= order.status %></span></td>
+                                        <td>
+                                            <form id="ordersubmit<%= order._id %>" method="post">
+                                                <% if(order.status == 'giao thành công') { %>
+                                                    <button id="sua"
+                                                            onclick="event.preventDefault();capnhatdon('<%= order._id %>', '<%= order.status %>');"
+                                                            type="button" disabled="disabled"><i
+                                                                class="fas fa-times"></i></button>
+                                                <% } else { %>
+                                                    <input hidden name="capnhat" value="" id="capnhat<%= order._id %>"/>
+                                                    <button id="sua"
+                                                            onclick="event.preventDefault();capnhatdon('<%= order._id %>', '<%= order.status %>');"
+                                                            type="button"><i class="fas fa-pencil-alt"></i></button>
+                                                <% } %>
+                                                <button class="ml-1" id="xoa"
+                                                        onclick="event.preventDefault();XoaDon('<%= order._id %>');"
+                                                        type="button"><i class="fas fa-trash"></i></button>
+                                            </form>
+                                        </td>
                                     </tr>
                                 <% }); %>
                             </table>
@@ -159,7 +182,11 @@
                 <a class="nav-link" id="stories-tab" href="/admin/stories">
                     Tin tức
                 </a>
+                <a class="nav-link" id="statistic-tab" href="/admin/statistic">
+                    Thống kê
+                </a>
             </div>
+
         </div>
     </div>
 

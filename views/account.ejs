@@ -139,6 +139,38 @@
                         </div>
                     </form>
                 </div>
+
+
+                <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                    <form action="/user/me/updateUserPassword" method="POST">
+                        <h3 class="mb-4">Cài đặt mật khẩu</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Mật khẩu cũ</label>
+                                    <input type="password" name="oldPassword" required class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Mật khẩu mới</label>
+                                    <input type="password" name="newPassword" required class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Cập nhật</button>
+                            <button class="btn btn-light">Hủy</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <!-- <button class="btn btn-primary">Cập nhật</button>
+<button class="btn btn-light">Hủy</button> -->
             </div>
         </div>
     </div>
