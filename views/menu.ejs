@@ -5,7 +5,6 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                <h1 class="mb-2 bread">Danh sách</h1>
                 <p class="breadcrumbs"><span class="mr-2"><a href="localhost:3000/">Trang chủ<i
                                     class="ion-ios-arrow-forward"></i></a></span> <span>Menu <i
                                 class="ion-ios-arrow-forward"></i></span></p>
@@ -21,32 +20,6 @@
                 <h2 class="mb-4">Sản phẩm</h2>
             </div>
         </div>
-
-        <form action="/menu/filter" method="POST">
-            <div class="filter_div">
-                    <span class="loai">
-            Loại:<select class="category1" name="category">
-                <option value="all">Tất cả</option>
-                <option value="Nổi bật">Nổi bật</option>
-                <option value="Cà phê">Cà phê</option>
-                <option value="Trà trái cây-Trà sữa">Trà trái cây - Trà sữa</option>
-                <option value="Đá xay-Choco-Matcha">Đá xay - Choco - Matcha</option>
-                <option value="Đồ uống nhanh">Đồ uống nhanh</option>
-                <option value="Drinks">Khác</option>
-            </select>
-            </span>
-                <span class="price">
-           Min: <input type="text" name="min"/> Max:<input type="text" name="max"/>
-            </span>
-                <span class="sort">
-            Sort: <select name="sort">
-                <option value="ASC">ASC</option>
-                <option value="DESC">DESC</option>
-            </select>
-            </span>
-                <input type="submit" value="Filter" class="filterbtn"/>
-            </div>
-        </form>
 
         <div class="row">
             <% if( products.length != 0 ){ %>
