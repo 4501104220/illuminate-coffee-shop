@@ -5042,7 +5042,7 @@ input[type="button"].btn-block {
 
 .navbar-brand:hover,
 .navbar-brand:focus {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .navbar-nav {
@@ -5096,7 +5096,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .navbar-toggler:not(:disabled):not(.disabled) {
@@ -5436,7 +5436,7 @@ input[type="button"].btn-block {
 
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
-    color: #fff;
+    text-decoration: underline;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -11664,7 +11664,7 @@ a.text-dark:focus {
 }
 
 body {
-    font-family: "Poppins", Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background: #fff;
     font-size: 16px;
     line-height: 2;
@@ -11689,7 +11689,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #f34949;
+    color: #ec6d47;
     outline: none !important;
 }
 
@@ -11709,11 +11709,11 @@ h5,
 }
 
 .text-primary {
-    color: #f34949 !important;
+    color: #ec6d47 !important;
 }
 
 .ftco-navbar-light {
-    background: #0e2a4a !important;
+    background: #fff !important;
     position: absolute;
     left: 0;
     right: 0;
@@ -11760,32 +11760,32 @@ h5,
     }
 
     .ftco-navbar-light.ftco-navbar-light-2 .navbar-nav > .nav-item > .nav-link:hover {
-        color: #fff;
+        text-decoration: underline;
     }
 }
 
 .ftco-navbar-light.ftco-navbar-light-2 .navbar-nav > .nav-item.active > a {
-    color: #f34949;
+    color: #ec6d47;
 }
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light.ftco-navbar-light-2 .navbar-nav > .nav-item.active > a {
-        color: #fff;
+        text-decoration: underline;
     }
 }
 
 .ftco-navbar-light .navbar-brand {
-    color: #ffa92d;
+    color: #000;
 }
 
 .ftco-navbar-light .navbar-brand:hover,
 .ftco-navbar-light .navbar-brand:focus {
-    color: white;
+    text-decoration: underline;
 }
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-brand {
-        color: #fff;
+        color: #000;
     }
 }
 
@@ -11802,12 +11802,12 @@ h5,
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 400;
-    color: #ffa92d;
+    color: #000;
     opacity: 1 !important;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-    color: white;
+    text-decoration: underline;
 }
 
 @media (max-width: 991.98px) {
@@ -11820,7 +11820,7 @@ h5,
     }
 
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-        color: #fff;
+        text-decoration: underline;
     }
 }
 
@@ -11885,12 +11885,12 @@ h5,
 @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
         color: #fff;
-        background: #f34949;
+        background: #ec6d47;
     }
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #f34949;
+    color: #ec6d47;
 }
 
 @media (max-width: 991.98px) {
@@ -11920,18 +11920,18 @@ h5,
     top: 0;
     height: 80px;
     margin-top: -130px;
-    background: #0e2a4a !important;
+    background: #fff !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .ftco-navbar-light.scrolled .nav-item.active > a {
-    color: #f34949 !important;
+    color: #ec6d47 !important;
 }
 
 .ftco-navbar-light.scrolled .nav-item.cta > a {
     color: #fff !important;
-    background: #f34949;
+    background: #ec6d47;
     border: none !important;
 }
 
@@ -11941,7 +11941,7 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
-    border-color: #f34949;
+    border-color: #ec6d47;
 }
 
 @media (max-width: 991.98px) {
@@ -11978,7 +11978,7 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .nav-link.active {
-    color: #f34949 !important;
+    color: #ec6d47 !important;
 }
 
 .ftco-navbar-light.scrolled.awake {
@@ -12396,7 +12396,7 @@ h5,
 .owl-carousel.home-slider .owl-nav .owl-prev:focus span:before {
     font-size: 20px;
     margin-top: 7px;
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .owl-carousel.home-slider .owl-nav .owl-next {
@@ -12420,7 +12420,7 @@ h5,
 .owl-carousel.home-slider .owl-nav .owl-next:focus span:before {
     font-size: 24px;
     margin-top: 7px;
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .owl-carousel.home-slider .owl-dots {
@@ -12469,7 +12469,7 @@ h5,
 }
 
 .bg-primary {
-    background: #f34949;
+    background: #ec6d47;
 }
 
 .btn {
@@ -12490,26 +12490,26 @@ h5,
 }
 
 .btn.btn-primary {
-    background: #f34949;
-    border: 1px solid #f34949;
+    background: #ec6d47;
+    border: 1px solid #ec6d47;
     color: #fff;
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid #f34949;
+    border: 1px solid #ec6d47;
     background: transparent;
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .btn.btn-primary.btn-outline-primary {
-    border: 1px solid #f34949;
+    border: 1px solid #ec6d47;
     background: transparent;
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .btn.btn-primary.btn-outline-primary:hover {
     border: 1px solid transparent;
-    background: #f34949;
+    background: #ec6d47;
     color: #fff;
 }
 
@@ -12523,7 +12523,7 @@ h5,
 .btn.btn-white:focus,
 .btn.btn-white:active {
     border: 1px solid #fff;
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .btn.btn-white.btn-outline-white {
@@ -12538,7 +12538,7 @@ h5,
 .btn.btn-white.btn-outline-white:active {
     background: #fff;
     border-color: #fff;
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .btn.btn-black {
@@ -12566,7 +12566,7 @@ h5,
 .btn.btn-black.btn-outline-black:active {
     background: #fff;
     border-color: #fff;
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .btn-custom {
@@ -12930,7 +12930,7 @@ h5,
 
 .block-27 ul li a,
 .block-27 ul li span {
-    border: 1px solid #f34949;
+    border: 1px solid #ec6d47;
     text-align: center;
     display: inline-block;
     width: 40px;
@@ -12941,7 +12941,7 @@ h5,
 
 .block-27 ul li.active a,
 .block-27 ul li.active span {
-    background: #f34949;
+    background: #ec6d47;
     color: #fff;
     border: 1px solid transparent;
 }
@@ -12972,7 +12972,7 @@ textarea.form-control {
 }
 
 .bg-primary {
-    background: #f34949 !important;
+    background: #ec6d47 !important;
 }
 
 .about-author .desc h3 {
@@ -12998,7 +12998,7 @@ textarea.form-control {
 
 .ftco-footer {
     font-size: 14px;
-    background: #141313;
+    background: #d4ece6;
     padding: 6em 0;
 }
 
@@ -13009,7 +13009,7 @@ textarea.form-control {
 
 .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
-    color: #fff;
+    color: ##000;;
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 700;
@@ -13115,7 +13115,7 @@ textarea.form-control {
 .ftco-footer .subscribe-form .form-group .submit {
     color: #fff !important;
     font-size: 16px;
-    background: #f34949 !important;
+    background: #ec6d47 !important;
     border: none !important;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -13177,7 +13177,7 @@ textarea.form-control {
 
 .footer-small-nav > li a:hover,
 .footer-small-nav > li a:focus {
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .media .ftco-icon {
@@ -13185,7 +13185,7 @@ textarea.form-control {
 }
 
 .media .ftco-icon span {
-    color: #f34949;
+    color: #ec6d47;
 }
 
 #map {
@@ -13366,7 +13366,7 @@ textarea.form-control {
 }
 
 .testimony-section .owl-dots .owl-dot.active {
-    background: #f34949;
+    background: #ec6d47;
 }
 
 .testimony-wrap {
@@ -13398,7 +13398,7 @@ textarea.form-control {
 }
 
 .testimony-wrap .user-img .quote i {
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .testimony-wrap .name {
@@ -13505,7 +13505,7 @@ textarea.form-control {
     display: block;
     font-size: 72px;
     font-weight: bold;
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .ftco-counter .ftco-label {
@@ -13581,7 +13581,7 @@ textarea.form-control {
 .block-21 .text .heading a:hover,
 .block-21 .text .heading a:active,
 .block-21 .text .heading a:focus {
-    color: #f34949;
+    color: #ec6d47;
 }
 
 .block-21 .text .meta > div {
@@ -13724,7 +13724,7 @@ textarea.form-control {
 }
 
 .subs-wrap {
-    background: #f34949 !important;
+    background: #ec6d47 !important;
     display: block;
     width: 100%;
     color: rgba(255, 255, 255, 0.7);
@@ -14314,7 +14314,7 @@ align-items: center;
 
 .loai {
     padding-right: 10px;
-    background: rgb(48, 49, 51) none repeat scroll 0 0;
+    background: #d4ece6 none repeat scroll 0 0;
     float: left;
     font-weight: 400;
 }
@@ -14336,7 +14336,7 @@ align-items: center;
 
 .filterbtn {
     border-radius: 5px;
-    background-color: darkslateblue;
+    background-color: rgb(171, 153, 97);
     color: white;
     padding-left: 5px;
     cursor: pointer;

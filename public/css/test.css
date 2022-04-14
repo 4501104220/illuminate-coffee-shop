@@ -74,7 +74,7 @@
 
 .responsive-button {
     justify-content: left;
-    background-color: #f34949;
+    background-color: #ec6d47;
     width: 50%;
     height: 100%;
     text-align: center;
@@ -774,7 +774,7 @@ ul#responsive_nav {
 }
 
 .nav-item-responsive:hover {
-    color: #fff;
+    text-decoration: underline
 }
 
 .nav-item-responsive > li > a {
@@ -870,7 +870,7 @@ ul#responsive_nav {
 }
 
 .responsive-header:hover {
-    color: #f34949;
+    color: #ec6d47;
     transform: matrix();
 }
 
