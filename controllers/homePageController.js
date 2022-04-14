@@ -95,7 +95,7 @@ const getDiscount = async (req, res) => {
         user = req.user;
     }
 
-    res.status(StatusCodes.OK).render('tracuu', {
+    res.status(StatusCodes.OK).render('searchDiscount', {
         discount: newDiscount,
         user: user,
         error: '',
